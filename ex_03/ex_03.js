@@ -9,7 +9,6 @@ function copy_file(){
                 fs.copyFile(process.argv[2], process.argv[3], err => {
                 if (err) {
                     console.log("Error: Critical failure");
-                    //throw "Error: Critical failure";
                     return -1;
                 }    
                 else  
@@ -20,7 +19,7 @@ function copy_file(){
 
             
     catch (err) {
-        console.log(err);
+        console.log("Error: Critical failure");
     }
 }
 copy_file();
