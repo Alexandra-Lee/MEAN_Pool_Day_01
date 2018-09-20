@@ -14,7 +14,8 @@ try {
                 fs.unlinkSync(dir_name + '/' + files[i]);
             }   
         }
-        if (isNaN(process.argv[2])) 
+        
+        if (isNaN(process.argv[2]) && process.argv[2]) 
             throw "Error: Critical failure";
             //console.log("Put in a number parameter");  
         else {
